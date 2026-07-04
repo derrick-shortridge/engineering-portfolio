@@ -1,0 +1,22 @@
+function Hero() {
+    const skills = [
+        "Orbyts Research Student",
+        "Electronics Enthusiast",
+        "Python Programmer"
+    ]
+    return(
+        <section className="">
+        <h2 className = "">Hi, I'm Derrick</h2><br />
+        <p>Aspiring Aerospace and Electronics Engineer</p>
+        <ul>
+            {skills.map((skill) => (
+                <li key={skill}>{skill}</li>
+            ))}
+        </ul>
+        <button>[View Projects]</button>
+        <button>[Contact Me]</button>
+        </section>
+    )
+}
+
+export default Hero
