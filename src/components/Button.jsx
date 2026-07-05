@@ -1,6 +1,6 @@
 function Button({text, href}) {
     return(
-        <a href ={href}>{text}</a>
+        <a className ="px-4 py-10" href ={href}>{text}</a>
     )
 }
 
