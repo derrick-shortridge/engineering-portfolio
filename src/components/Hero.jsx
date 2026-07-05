@@ -1,3 +1,5 @@
+import Button from './Button'
+
 function Hero() {
     const skills = [
         "Orbyts Research Student",
@@ -13,10 +15,10 @@ function Hero() {
                 <li key={skill}>{skill}</li>
             ))}
         </ul>
-        <button>[View Projects]</button>
-        <button>[Contact Me]</button>
+        <Button text="[View Projects]" />
+        <Button text="[Contact Me]" />
         </section>
     )
 }
-
+ 
 export default Hero
