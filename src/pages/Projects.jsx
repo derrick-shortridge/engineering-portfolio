@@ -1,4 +1,4 @@
-import {projects} from '../data/projects'
+import projects from '../data/projects'
 import ProjectCard from '../components/ProjectCard'
 
 function Projects() {
@@ -10,9 +10,15 @@ function Projects() {
             
             <div>
                 {projects.map((project) => (
-                    <ProjectCard key={projects.id} project={project}/>
+                    <ProjectCard key={project.id} project={project}/>
+                ))}
+                <h3>Technologies used: </h3>
+                {technologies.map((technology) => (
+                    <p key={technology}>{technology}</p>
                 ))}
             </div>
         </>
     )
 }
+
+export default Projects

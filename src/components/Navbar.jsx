@@ -1,5 +1,4 @@
-import { link } from "framer-motion/client";
-
+import {Link} from 'react-router-dom'
 
 function Navbar() {
     const links = [

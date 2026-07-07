@@ -1,4 +1,5 @@
 import Button from './Button'
+import {Link} from 'react-router-dom'
 function Hero() {
     const skills = [
         ". Orbyts Research Student",
@@ -17,9 +18,13 @@ function Hero() {
                 <li className ="text-gray-300 font-bold text-2xl px-4 py-45" key={skill}>{skill}</li>
             ))}
         </ul>
-        <div className="text-gray-300 font-bold text-2xl flex flex-wrap justify-evenly">
-            <Button  text="[View Projects]" href="#"/>
-            <Button text="[Contact Me]" href="#"/>
+        <div className="text-gray-300 font-bold text-2xl py-12 flex flex-wrap justify-evenly">
+            <Link to="../pages/Projects.jsx" >
+             <Button  text="[View Projects]"/>   
+            </Link>    
+            <Link to="../pages/Contact.jsx">   
+                <Button text="[Contact Me]"/>
+            </Link>  
         </div>
         </section>
     )
