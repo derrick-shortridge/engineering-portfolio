@@ -1,9 +1,9 @@
-    const projects = [
+    const Projects = [
         {
             id: 1,
             title: "Orbyts",
             description: "Astronomical research with a UCL student",
-            technologies: ["Python", "Git"],
+            technologies: ["Python ", "Git"],
             github: "",
             liveDemo: "",
             image: "",
@@ -12,7 +12,7 @@
             id: 2,
             title: "Portfolio Website",
             description: "Learning React",
-            technologies: ["React", "Tailwind"],
+            technologies: ["React ", "Tailwind"],
             github: "",
             liveDemo: "",
             image: "",
@@ -20,4 +20,4 @@
         
     ];
 
-    export default projects
+    export default Projects
